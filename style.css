@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: #50C878;
+    background: linear-gradient(360deg,rgba(80, 200, 120, 1) 0%, rgba(250, 250, 250, 1) 90%);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #006A4E;
+    padding: 5px 100px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+header, main *{
+    font-family: "Roboto Condensed", sans-serif;
+}
+header .header-content {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 50px 20px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+header .header-content .pdfc-logo{
+    grid-row:1/2;
+}
+header .header-content h1{
+    color: #FFD700;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: self-end;
+}
+header .header-content p{
+    color: white;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-family: "Roboto Mono", monospace;
+    word-spacing: -3px;
+}
+header .header-nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+header .header-nav ul .onpage {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #FFD700;
+    color: #FFD700;
+}
+header .header-nav ul .offpage {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: white ;
+    transition: all 0.3s ease;
+}
+header .header-nav ul .offpage:hover{
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.514);
+    color: black;
+    transform: translateY(-2px);
+}
+ /* ******************************* */
+
+.cln {
+    max-width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    width: fit-content;
+    max-width: 95%;
+    text-align: center;
+    margin: 10px auto;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #10eeb342;
+    color: #003D2C;
+}
+
+.cln .cln-card {
+ display: grid;
+ gap: 10px;
+ grid-template-columns: 1fr 1fr 1fr;
+margin-bottom: 15px;
+}
+
+.cln .cln-card .card {
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-bottom: 2px solid #003d2ca8;
+    box-shadow: 0 -2px 5px #4fb69960 ;
+    cursor: pointer;
+}
+.cln .cln-card .card:hover {
+    transform: translateY(-2px);
+    transition: all 0.4s;
+    border-bottom: 5px solid #003d2ca8;
+}
+.cln .cln-card .card h4 {
+    margin-bottom: 20px;
+    color: #003D2C;
+}
+
+.cln h3 {
+    text-align: center;
+}
+.cln h3 span {
+    margin: 0 5px;
+    color: red;
+    font-size: 24px;
+    border-bottom: 2px solid red;
+}
+.whycln {
+    max-width: 88%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.notecard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+ .note-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+  .note-card .circle {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    color: white;
+    text-align: center;
+    margin:10px 10px;
+    line-height: 1.2;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  
+  .note-card .text {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Color Themes */
+  .note-card.blue {
+    background-color: #e1f6ff;
+    border-left: 10px solid #00acc1;
+  }
+  
+  .note-card.blue .circle {
+    background-color: #00acc1;
+  }
+  
+  .note-card.green {
+    background-color: #e9fbe4;
+    border-right: 10px solid #7cb342;
+  }
+  
+  .note-card.green .circle {
+    background-color: #7cb342;
+  }
+
+  .note-card.dark {
+    background-color: #f0f0f0;
+    border-left: 10px solid #424242;
+  }
+  
+  .note-card.dark .circle {
+    background-color: #424242;
+  }
+  
+  .note-card.orange {
+    background-color: #fff0e1;
+    border-right: 10px solid #ff5722;
+  }
+  
+  .note-card.orange .circle {
+    background-color: #ff5722;
+  }
+
+.review-container {
+    max-width: 88%;
+    margin: auto;
+  }
+
+.review-container .title {
+    margin: 30px auto;
+
+}
+  .review-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s;
+  }
+  .review-card:hover {
+    transform: scale(1.02);
+  }
+  .email {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  .comment {
+    margin-top: 10px;
+  }
+  .rating {
+    font-weight: bold;
+    color: #e67e22;
+  }
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 20%;
+    background-color: #a7ec26e7 ;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #88b60bd3;
+}
+
+
+
+
+
+
+ 
+
+/* **************************** */
+.footer {
+    width: 100%;
+    background-color: #003D2C;
+    color: #f4f4f4;
+    padding: 30px 20px 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer *{
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.admin-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.owner-info{
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+    gap: 10px;
+}
+.footer-link {
+    color: #88cc88;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #a0e6a0;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 0.8rem;
+}

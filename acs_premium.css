@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: #50C878;
+    background: linear-gradient(360deg,rgba(80, 200, 120, 1) 0%, rgba(250, 250, 250, 1) 90%);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #006A4E;
+    padding: 5px 100px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+header, main *{
+    font-family: "Roboto Condensed", sans-serif;
+}
+header .header-content {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 50px 20px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+header .header-content .pdfc-logo{
+    grid-row:1/2;
+}
+header .header-content h1{
+    color: #FFD700;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: self-end;
+}
+header .header-content p{
+    color: white;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-family: "Roboto Mono", monospace;
+    word-spacing: -3px;
+}
+header .header-nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+header .header-nav ul .onpage {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #FFD700;
+    color: #FFD700;
+}
+header .header-nav ul .offpage {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: white ;
+    transition: all 0.3s ease;
+}
+header .header-nav ul .offpage:hover{
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.514);
+    color: black;
+    transform: translateY(-2px);
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #006A4E;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar *{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar h2 {
+    color: #FFD700;
+}
+
+.custom-button {
+  background-color: white;
+  text-align: center;
+  width: 224px;
+  border-radius: 1rem;
+  height: 42px; 
+  position: relative;
+  color: #006A4E;
+  font-size: 1.25rem; 
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button:hover .button-highlight {
+  width: 215px;
+}
+
+.button-highlight {
+  background-color: #006A4E;
+  color: #006A4E;
+  border-radius: 0.75rem; 
+  height: 34px;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  z-index: 10;
+  transition-duration: 500ms;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+.button-highlight:hover {
+    color: white;
+}
+
+
+.button-text {
+  transform: translateX(0.5rem);
+}
+
+.search-section {
+    width: 1200px;
+    max-width: 95%;
+    margin: 10px auto 30px auto;
+    padding: 0 20px;
+}
+
+.src-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.src-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1.5px solid #e1e5ee;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.src-input:focus {
+    border-color: #4e73df;
+    box-shadow: 0 2px 20px rgba(78, 115, 223, 0.4);
+}
+
+/* Cards Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+}
+
+/* Feather Card Styles */
+.feather-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card-header {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+    color: white;
+}
+
+.chapter-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.live-badge {
+    display: inline-block;
+    background-color: #1cc88a;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.archive-badge {
+    display: inline-block;
+    background-color: #ac9828;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.yt-badge {
+    display: inline-block;
+    background-color: #e74a3b;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.subject {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+#bngtxt {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.instructor {
+    font-size: 18px;
+    color: black;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.page-info {
+    font-size: 16px;
+    color: black;
+    margin: 0 0 15px;
+}
+
+.original-price {
+    display: block;
+    font-weight: 500;
+    color: #e74a3b;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.add-btn {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.add-btn:hover {
+    background-color: #224abe;
+}
+
+/* Hidden class for search functionality */
+.hidden {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #003D2C;
+    color: #f4f4f4;
+    padding: 30px 20px 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer *{
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.admin-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.owner-info{
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+    gap: 10px;
+}
+.footer-link {
+    color: #88cc88;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #a0e6a0;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* Payment Popup Styles */
+.payment-popup *{
+    font-family: "Roboto Condensed", sans-serif;
+}
+.payment-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.popup-content h3 {
+    color: #006A4E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.selected-items {
+    margin-bottom: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.selected-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.total-amount {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    color: #e74a3b;
+}
+
+.payment-methods {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.payment-methods h4 {
+    margin-top: 0;
+    color: #006A4E;
+}
+
+.payment-methods p {
+    margin: 8px 0;
+}
+
+.payment-methods a {
+    text-decoration: none;
+}
+.payment-methods a div {
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    background-color: #006A4E;
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+}
+.payment-methods a div:hover {
+    background-color: #1cc88a;
+}
+/* Added/Selected button state */
+.add-btn.added {
+    background-color: #1cc88a;
+}
+
+.add-btn.added:hover {
+    background-color: #17a673;
+}
+
+@media screen and (max-width:586px) {
+    .navbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .navbar h2 {
+        transform: scale(0.9);
+    }
+    .custom-button {
+        transform: scale(0.8);
+    }
+}

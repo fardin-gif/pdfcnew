@@ -77,6 +77,10 @@
     margin-bottom: 30px;
     }
 
+    .cln iframe {
+        height: 416px;
+    }
+
 
 
 
@@ -108,5 +112,9 @@
 
     .cln .cln-card {
         grid-template-columns: 1fr;
+    }
+
+    .cln iframe {
+        height: 256px;
     }
 }

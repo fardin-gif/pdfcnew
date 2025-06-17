@@ -27,26 +27,13 @@
     header .header-nav{
         margin: 0 auto;
     }
-    .search-container {
-        max-width: 310px;
-    }
-    .search-box {
-        flex-direction: row; /* Keep input and button on same line */
-    }
-    .search-box input {
-        border-radius: 4px 0 0 4px;
-    }
-    .search-box button {
-        border-radius: 0 4px 4px 0;
-        margin-top: 0;
-    }
+    
     .cln .cln-card {
         grid-template-columns: 1fr 1fr;
     }
     .notecard-container {
         grid-template-columns: 1fr;
     }
-
 
     .note-card {
         flex-direction: column;
@@ -81,11 +68,14 @@
         height: 416px;
     }
 
-
-
-
-
 }
+
+@media screen and (max-width:710px) {
+    .premium {
+    grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width:586px){
     header{
         padding: 10px;
@@ -116,5 +106,9 @@
 
     .cln iframe {
         height: 256px;
+    }
+
+    .navbar h2 {
+        font-size: 12px;
     }
 }

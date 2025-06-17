@@ -63,32 +63,10 @@
         </div>
     </header>
     <div class="navbar">
-        <div class="search-container">
-                <p>Freemium Notes</p>
-                <div class="search-box">
-                    <input type="text" id="search-input-interest" placeholder="Select course..." readonly>
-                    <button id="search-button-interest">Done</button>
-                </div>
-                <div class="dropdown" id="dropdown-interest">
-                    <a href="acs_engineering_25.html" class="dropdown-option">ACS Engineering 25</a>
-                    <a href="acs_mathoneshot.html" class="dropdown-option" >ACS Math Oneshot</a>
-                    <a href="acs_engcal.html" class="dropdown-option">Engineering Calculus</a>
-                </div>
-            </div>
-            <div class="search-container">
-                <p>Premium Notes</p>
-                <div class="search-box">
-                    <input type="text" id="search-input-interest" placeholder="Select course..." readonly>
-                    <button id="search-button-interest">Done</button>
-                </div>
-                <div class="dropdown" id="dropdown-interest">
-                    <a href="acs_premium.html" class="dropdown-option">ACS Engineering 25</a>
-                </div>
-            </div>
-        </div>
+        <h2>Overview of Available Customized Notes for ACS Courses</h2>
+    </div>
             
 <main>
-        <h2 class="title">Overview of Customized Notes Available for ACS Courses</h2>
     <div class="courses-container">
 
             <!-- popover command 01 -->
@@ -98,6 +76,10 @@
         <h3>ACS Engineering 25</h3>
         <a href="https://aparsclassroom.com/shop/admission/HSC_25/Engineering/" class="course-link">Go to Course</a>
         <button class="overview-btn" data-popover="popover-01">Overview</button>
+        <div class="premium">
+            <a href="acs_engineering_25.html" class="overview-btn">Freemium (<i class="fa-solid fa-gift"></i>)</a>
+            <a href="acs_premium.html" class="overview-btn" id="goldcn">Premium (<i class="fa-solid fa-coins"></i>)</a>
+        </div>
         </div>
 
         <!-- popover command 02 -->
@@ -107,6 +89,9 @@
         <h3>ACS Math Oneshot</h3>
         <a href="https://www.youtube.com/watch?v=KtqyZ-ANMUk&list=PLi5fEbOt0If7Rky9DdZePw4wNFJVbGxt4" class="course-link">Go to Playlist</a>
         <button class="overview-btn" data-popover="popover-02">Overview</button>
+        <div class="freemium">
+            <a href="acs_mathoneshot.html" class="overview-btn">Freemium (<i class="fa-solid fa-gift"></i>)</a>
+        </div>
         </div>
 
         <!-- popover command 03 -->
@@ -116,6 +101,9 @@
         <h3>ACS Engineering Calculus</h3>
         <a href="https://www.youtube.com/watch?v=gvRXshXuqEE&list=PLi5fEbOt0If5Qzx4SRMSSsNPyChKImUXs" class="course-link">Go to Playlist</a>
         <button class="overview-btn" data-popover="popover-03">Overview</button>
+        <div class="freemium">
+            <a href="acs_engcal.html" class="overview-btn">Freemium (<i class="fa-solid fa-gift"></i>)</a>
+        </div>
         </div>
     </div>
 
@@ -133,7 +121,7 @@
                 <h3>Physics 1st <span>Live</span></h3>
                 <ul class="chapter-list">
                     <li>Vector (<i class="fa-solid fa-gift"></i>)</li>
-                    <li class="goldcn">Newtonian Mechanics (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Newtonian Mechanics (<i class="fa-solid fa-coins"></i>)</li>
                 </ul>
             </div>
             <div class="subject-section">
@@ -169,22 +157,22 @@
                 <ul class="chapter-list">
                     <li>Vector (<i class="fa-solid fa-gift"></i>)</li>
                     <li>Newtonian Mechanics (<i class="fa-solid fa-gift"></i>)</li>
-                    <li class="goldcn">Gravity (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Gravity (<i class="fa-solid fa-coins"></i>)</li>
                     <li>Structure of Matter (<i class="fa-solid fa-gift"></i>)</li>
-                    <li class="goldcn">Periodic Motion (<i class="fa-solid fa-coins"></i>)</li>
-                    <li class="goldcn">Ideal Gas (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Periodic Motion (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Ideal Gas (<i class="fa-solid fa-coins"></i>)</li>
                 </ul>
             </div>
             
             <div class="subject-section">
                 <h3>Physics 2nd <span style="color:darkgreen">Archive</span></h3>
                 <ul class="chapter-list">
-                    <li class="goldcn">Thermodynamics (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Thermodynamics (<i class="fa-solid fa-coins"></i>)</li>
                     <li>Static Electricity (<i class="fa-solid fa-gift"></i>)</li>
-                    <li class="goldcn">Current Electricity (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Current Electricity (<i class="fa-solid fa-coins"></i>)</li>
                     <li>Physical Optics (<i class="fa-solid fa-gift"></i>)</li>
-                    <li class="goldcn">Modern Physics (<i class="fa-solid fa-coins"></i>)</li>
-                    <li class="goldcn">Neuclear Physics (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Modern Physics (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Neuclear Physics (<i class="fa-solid fa-coins"></i>)</li>
                     <li>Semiconductor (<i class="fa-solid fa-gift"></i>)</li>
                 </ul>
             </div>
@@ -192,9 +180,9 @@
             <div class="subject-section">
                 <h3>Math 1st <span style="color:darkgreen">Archive</span></h3>
                 <ul class="chapter-list">
-                    <li class="goldcn">Matrices & Determinants (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Matrices & Determinants (<i class="fa-solid fa-coins"></i>)</li>
                     <li>Straight Line (<i class="fa-solid fa-gift"></i>)</li>
-                    <li class="goldcn">Circle (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Circle (<i class="fa-solid fa-coins"></i>)</li>
                     <li>Trigonometry (<i class="fa-solid fa-gift"></i>)</li>
                     <li>Differentiation (<i class="fa-solid fa-gift"></i>)</li>
                     <li>Integration (<i class="fa-solid fa-gift"></i>)</li>
@@ -204,9 +192,9 @@
             <div class="subject-section">
                 <h3>Math 2nd <span style="color:darkgreen">Archive</span></h3>
                 <ul class="chapter-list">
-                    <li class="goldcn">Complex Number (<i class="fa-solid fa-coins"></i>)</li>
-                    <li class="goldcn">Polynomial (<i class="fa-solid fa-coins"></i>)</li>
-                    <li class="goldcn">Conics (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Complex Number (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Polynomial (<i class="fa-solid fa-coins"></i>)</li>
+                    <li id="goldcn">Conics (<i class="fa-solid fa-coins"></i>)</li>
                 </ul>
             </div>
 

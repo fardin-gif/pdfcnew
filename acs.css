@@ -91,112 +91,10 @@ header .header-nav ul .offpage:hover{
 .navbar .search-container i {
     font-family: "Roboto Condensed", sans-serif;
 }
-.search-container {
-    background-color: #FFD700;
-    padding: 10px;
-    border-radius: 10px;
-    position: relative;
-    min-width: 250px;
-    max-width: 400px;
-    flex-grow: 1;
-}
 
-.search-container p {
+.navbar h2 {
+    color: #FFD700;
     text-align: center;
-    font-size: 1rem;
-    padding-bottom: 5px;
-    color: #333;
-    font-weight: 600;
-}
-
-.search-box {
-    display: flex;
-    width: 100%;
-    position: relative;
-}
-
-.search-box input {
-    flex: 1;
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
-    font-size: 0.9rem;
-    outline: none;
-    background-color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 0; /* Fix for flexbox overflow */
-}
-
-.search-box input:focus {
-    border-color: #005F73;
-    box-shadow: 0 0 0 2px rgba(0, 95, 115, 0.2);
-}
-
-.search-box button {
-    padding: 10px 15px;
-    background-color: #E03C31;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
-    white-space: nowrap;
-}
-
-.search-box button:hover {
-    background-color: #c53228;
-}
-
-.dropdown {
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 0;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    z-index: 1000;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.dropdown.active {
-    display: flex;
-}
-
-.dropdown-option {
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #333;
-    text-decoration: none;
-    transition: all 0.2s;
-    border-bottom: 1px solid #eee;
-}
-
-.dropdown-option:last-child {
-    border-bottom: none;
-}
-
-.dropdown-option:hover {
-    background-color: #f0f0f0;
-    color: #005F73;
-}
-
-main .title{
-    width: fit-content;
-    max-width: 95%;
-    text-align: center;
-    margin: 10px auto;
-    font-family: "Roboto Condensed", sans-serif;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #10eeb342;
-    color: #003D2C;
 }
  
 /* *********************** */
@@ -253,6 +151,22 @@ main .title{
     background: #2980b9;
 }
 
+.premium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.freemium {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.premium a {
+    text-decoration: none;
+    text-align: center;
+}
+.freemium a {
+    text-decoration: none;
+    text-align: center;
+}
 .overview-btn {
     display: block;
     width: calc(100% - 40px);
@@ -406,7 +320,7 @@ main .title{
 .bngtxt {
     font-family: "Hind Siliguri", sans-serif;
 }
-.goldcn {
+#goldcn {
     color:#D4AF37 ;
 }
 /* **************************** */
